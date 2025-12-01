@@ -1,4 +1,4 @@
-{ vars, pkgs, home-manager, ... }:
+{ inputs, vars, pkgs, home-manager, ... }:
 
 {
   imports = [
@@ -54,6 +54,7 @@
     wlr-randr
     pavucontrol
     p7zip
+    youtube-music
   ];
   
   # Set your time zone.

@@ -21,45 +21,24 @@
   };
   programs.dankMaterialShell = {
     enable = true;
+    systemd = {
+      enable = true;             # Systemd service for auto-start
+      restartIfChanged = true;   # Auto-restart dms.service when dankMaterialShell changes
+    };
     default.settings = {
       theme = "dark";
       dynamicTheming = true;
       # Add any other settings here
     };
+    # Core features
+    enableSystemMonitoring = true;     # System monitoring widgets (dgop)
+    enableClipboard = true;            # Clipboard history manager
+    enableVPN = true;                  # VPN management widget
+    enableBrightnessControl = true;    # Backlight/brightness controls
+    enableColorPicker = true;          # Color picker tool
+    enableDynamicTheming = true;       # Wallpaper-based theming (matugen)
+    enableAudioWavelength = true;      # Audio visualizer (cava)
+    enableCalendarEvents = true;       # Calendar integration (khal)
+    enableSystemSound = true;          # System sound effects
   };
-  # programs.caelestia = {
-  #   enable = true;
-    
-  #   systemd = {
-  #     enable = false;
-  #     # target = "graphical-session.target";
-  #     # environment = [];
-  #   };
-
-  #   cli = {
-  #     enable = true; 
-  #     settings = {
-  #       theme.enableGtk = false;
-  #     };
-  #   };
-
-  #   settings = {
-  #     general.idle = {
-  #       timeouts = [
-  #         {
-  #           timeout = 1800;
-  #           idleAction = "lock";
-  #         }
-  #       ];
-  #     };
-  #     bar.status = {
-  #       showBattery = false;
-  #     };
-  #     paths.wallpaperDir = "~/Pictures/wallpapers"; 
-      
-  #     background.visualiser.enabled = true;
-  #     general.apps.terminal = [ "foot" ];
-  #   };
-  # };
-
 }
