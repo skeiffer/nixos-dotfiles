@@ -3,8 +3,8 @@
 {
   imports = [
     ./wallpapers.nix
+    ./noctalia.nix
     inputs.dankMaterialShell.homeModules.dankMaterialShell.default
-    #inputs.caelestia-shell.homeManagerModules.default
   ];
   home.username = "scott";
   home.homeDirectory = "/home/scott";
