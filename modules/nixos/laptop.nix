@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 {
   # Lid & PowerKey settings
   #
@@ -22,4 +22,6 @@
     AllowSuspendThenHibernate=no
     HibernateDelaySec=5min
   '';
+  powerManagement.enable = true;
+  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
 }
