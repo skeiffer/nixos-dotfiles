@@ -18,17 +18,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    dgop = {
-      url = "github:AvengeMedia/dgop";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    dankMaterialShell = {
-      url = "github:AvengeMedia/DankMaterialShell";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.dgop.follows = "dgop";
-    };
-
     niri.url = "github:sodiboo/niri-flake";
     
     # stylix = {
@@ -54,7 +43,7 @@
       modules = [
         ./modules/nixos/asahi.nix
         ./modules/nixos/default.nix
-        inputs.stylix.nixosModules.stylix
+        #inputs.stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         {
           home-manager = {

@@ -35,6 +35,7 @@
 
   programs.seahorse.enable = true;
   programs.firefox.enable = true;
+  programs.thunar.enable = true;
   
   programs.hyprland = {
     enable = true;
@@ -49,13 +50,14 @@
     wget
     git
     kitty
-    thunar
-    waybar
+    #waybar
     hyprpaper
     wlr-randr
     pavucontrol
     p7zip
     youtube-music
+    playerctl
+    brightnessctl
   ];
   
   # Set your time zone.
