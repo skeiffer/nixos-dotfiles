@@ -52,7 +52,6 @@
     wget
     git
     kitty
-    #waybar
     hyprpaper
     wlr-randr
     pavucontrol
@@ -60,6 +59,8 @@
     youtube-music
     playerctl
     brightnessctl
+    tuigreet
+    base16-schemes # Themeing
   ];
   
   # Set your time zone.

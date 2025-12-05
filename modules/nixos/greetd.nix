@@ -1,5 +1,5 @@
 {
-  ...
+  pkgs, ...
 }:
 
 {
@@ -7,11 +7,7 @@
     enable = true;
     settings = {
       default_session = {
-        #command = "${pkgs.tuigreet}/bin/tuigreet --remember  --asterisks  --container-padding 2 --no-xsession-wrapper --cmd niri-session";
-        #user = "greeter";
-        # Starts niri session logged in automatically without prompt
-        command = "niri-session";
-        user = "scott";
+        command = "${pkgs.tuigreet}/bin/tuigreet --remember --asterisks --container-padding 2 --cmd niri-session";
       };
     };
   };
