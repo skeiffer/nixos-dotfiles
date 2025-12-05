@@ -6,7 +6,7 @@ let
   };
 in 
 {
-  home.file."Pictures/wallpapers/mlfw" = {
+  home.file."Pictures/Wallpapers/mlfw" = {
     source = wallpapersRepo;
   };
 }

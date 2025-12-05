@@ -49,6 +49,7 @@
     wget
     git
     kitty
+    thunar
     waybar
     hyprpaper
     wlr-randr

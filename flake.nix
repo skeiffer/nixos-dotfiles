@@ -29,6 +29,13 @@
       inputs.dgop.follows = "dgop";
     };
 
+    niri.url = "github:sodiboo/niri-flake";
+    
+    # stylix = {
+    #   url = "github:danth/stylix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -47,6 +54,7 @@
       modules = [
         ./modules/nixos/asahi.nix
         ./modules/nixos/default.nix
+        inputs.stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         {
           home-manager = {
