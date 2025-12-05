@@ -49,7 +49,6 @@
       # }
 
       {
-        matches = [ { } ];
         geometry-corner-radius = {
           top-left = 20.0;
           top-right = 20.0;
@@ -59,5 +58,8 @@
         clip-to-geometry = true;
       }
     ];
+    debug = {
+      honor-xdg-activation-with-invalid-serial = true;
+    };
   };
 }

@@ -67,6 +67,13 @@ in
       #"super+p".action = spawn [ "${pkgs._1password-gui}/bin/1password" "--quick-access" ];
 
       "super+t".action = toggle-window-floating;
+      "super+l".action = spawn [
+        "noctalia-shell"
+        "ipc"
+        "call"
+        "lockScreen"
+        "lock"
+      ];
 
       "control+shift+1".action.screenshot = [ ];
       "control+shift+2".action.screenshot-window = [ ];

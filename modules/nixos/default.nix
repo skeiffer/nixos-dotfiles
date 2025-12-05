@@ -3,6 +3,8 @@
 {
   imports = [
     ../../hosts/${vars.host}/configuration.nix
+    ./xdg.nix
+    ./greetd.nix
   ];
   
   networking.networkmanager.enable = true;
