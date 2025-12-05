@@ -50,6 +50,7 @@ in
       XF86MonBrightnessUp.action = set-brightness "5%+";
       XF86MonBrightnessDown.action = set-brightness "5%-";
 
+      "super+Shift+Slash".action.show-hotkey-overlay = {};
       "super+q".action = close-window;
       "super+b".action = spawn apps.browser;
       "super+Return".action = spawn apps.terminal;
@@ -65,7 +66,6 @@ in
       # 1Passord quick access
       #"super+p".action = spawn [ "${pkgs._1password-gui}/bin/1password" "--quick-access" ];
 
-      "super+f".action = fullscreen-window;
       "super+t".action = toggle-window-floating;
 
       "control+shift+1".action.screenshot = [ ];
@@ -80,6 +80,7 @@ in
       "super+Shift+Right".action = move-column-right;
       "super+Shift+Down".action = move-column-to-workspace-down;
       "super+Shift+Up".action = move-column-to-workspace-up;
+      
 
       "super+1".action = focus-workspace 1;
       "super+2".action = focus-workspace 2;
@@ -91,14 +92,40 @@ in
       "super+8".action = focus-workspace 8;
       "super+9".action = focus-workspace 9;
 
-      # "super+Ctrl+1".action = move-column-to-workspace "1";
-      # "super+Ctrl+2".action = move-column-to-workspace "2";
-      # "super+Ctrl+3".action = move-column-to-workspace "3";
-      # "super+Ctrl+4".action = move-column-to-workspace "4";
-      # "super+Ctrl+5".action = move-column-to-workspace "5";
-      # "super+Ctrl+6".action = move-column-to-workspace "6";
-      # "super+Ctrl+7".action = move-column-to-workspace "7";
-      # "super+Ctrl+8".action = move-column-to-workspace "8";
-      # "super+Ctrl+9".action = move-column-to-workspace "9";
+      # "super+Ctrl+1".action = move-column-to-workspace 1;
+      # "super+Ctrl+2".action = move-column-to-workspace 2;
+      # "super+Ctrl+3".action = move-column-to-workspace 3;
+      # "super+Ctrl+4".action = move-column-to-workspace 4;
+      # "super+Ctrl+5".action = move-column-to-workspace 5;
+      # "super+Ctrl+6".action = move-column-to-workspace 6;
+      # "super+Ctrl+7".action = move-column-to-workspace 7;
+      # "super+Ctrl+8".action = move-column-to-workspace 8;
+      # "super+Ctrl+9".action = move-column-to-workspace 9;
+
+      # There are also commands that consume or expel a single window to the side.
+      # Mod+BracketLeft  { consume-or-expel-window-left; }
+      # Mod+BracketRight { consume-or-expel-window-right; }
+
+      "super+R".action.switch-preset-column-width = {};
+      "super+Shift+R".action.reset-window-height = {};
+      "super+F".action.maximize-column = {};
+      "super+Shift+F".action.fullscreen-window = {};
+      "super+C".action.center-column = {};
+
+      # Finer width adjustments.
+      # This command can also:
+      # * set width in pixels: "1000"
+      # * adjust width in pixels: "-5" or "+5"
+      # * set width as a percentage of screen width: "25%"
+      # * adjust width as a percentage of screen width: "-10%" or "+10%"
+      # Pixel sizes use logical, or scaled, pixels. I.e. on an output with scale 2.0,
+      # set-column-width "100" will make the column occupy 200 physical screen pixels.
+      "super+Minus".action.set-column-width = "-10%";
+      "super+Equal".action.set-column-width = "+10%";
+
+      # Finer height adjustments when in column with other windows.
+      "super+Shift+Minus".action.set-window-height = "-10%";
+      "super+Shift+Equal".action.set-window-height = "+10%";
+
     };
 }
