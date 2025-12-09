@@ -29,11 +29,6 @@
   #  sddm.wayland.enable = true;
   #};
 
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
-    wireplumber.enable = true;
-  };
 
   programs.seahorse.enable = true;
   programs.firefox.enable = true;
