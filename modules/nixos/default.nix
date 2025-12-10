@@ -34,11 +34,10 @@
   programs.firefox.enable = true;
   programs.thunar.enable = true;
   
-  programs.hyprland = {
+  programs.nh = {
     enable = true;
-    xwayland.enable = true;
   };
-  
+
   environment.systemPackages = with pkgs; [
     vim
     neovim

@@ -7,6 +7,7 @@ in
 {
   imports = [
     ./wallpapers.nix
+    ./programs
     ./niri
     ./noctalia.nix
   ];
