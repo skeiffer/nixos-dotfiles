@@ -56,6 +56,7 @@
     tuigreet
     base16-schemes # Themeing
     matugen
+    signal-desktop
   ];
   
   # Set your time zone.
