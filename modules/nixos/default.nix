@@ -55,6 +55,7 @@
     brightnessctl
     tuigreet
     base16-schemes # Themeing
+    matugen
   ];
   
   # Set your time zone.
