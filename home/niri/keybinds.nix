@@ -16,6 +16,7 @@ in
       playerctl = "${pkgs.playerctl}/bin/playerctl";
       set-volume = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@";
       set-brightness = spawn "brightnessctl" "-e4" "-n2" "set";
+      set-kb-brightness = spawn "brightnessctl" "--device=kbd_backlight" "set";
       media-play-pause = spawn playerctl [ "play-pause" ];
       media-next = spawn playerctl [ "next" ];
       media-previous = spawn playerctl [ "previous" ];
@@ -49,6 +50,10 @@ in
  
       XF86MonBrightnessUp.action = set-brightness "5%+";
       XF86MonBrightnessDown.action = set-brightness "5%-";
+      XF86KbdBrightnessUp.action = set-kb-brightness "25%+";
+      XF86KbdBrightnessDown.action = set-kb-brightness "25%-";
+      "super+XF86MonBrightnessUp".action = set-kb-brightness "25%+";
+      "super+XF86MonBrightnessDown".action = set-kb-brightness "25%-";
 
       "super+Shift+Slash".action.show-hotkey-overlay = {};
       "super+q".action = close-window;
