@@ -25,4 +25,15 @@
       Settings.AutoConnect = true;
     };
   };
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    extraConfig.pipewire.adjust-sample-rate = {
+        "context.properties" = {
+          "default.clock.min-quantum" = 1024; # Fix for crackling audio.
+        };
+      };
+  };
 }

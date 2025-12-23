@@ -57,6 +57,7 @@
     base16-schemes # Themeing
     matugen
     signal-desktop
+    dig
   ];
   
   # Set your time zone.
