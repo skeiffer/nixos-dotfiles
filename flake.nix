@@ -17,7 +17,7 @@
       url = "github:nix-community/nixos-apple-silicon/release-2025-11-18";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
+sudo
     niri.url = "github:sodiboo/niri-flake";
     
     # stylix = {

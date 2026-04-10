@@ -9,6 +9,7 @@ in
     ./wallpapers.nix
     ./programs
     ./niri
+    ./hypridle
     ./noctalia.nix
   ];
   home.username = "scott";
