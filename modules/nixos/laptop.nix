@@ -16,12 +16,12 @@
     powerKeyLongPress = "poweroff";
   };
   systemd.targets.sleep.enable = true;
-  systemd.sleep.extraConfig = ''
-    AllowSuspend=yes
-    AllowHibernate=no
-    AllowSuspendThenHibernate=no
-    HibernateDelaySec=5min
-  '';
+  #systemd.sleep.extraConfig = ''
+  #  AllowSuspend=yes
+  #  AllowHibernate=no
+  #  AllowSuspendThenHibernate=no
+  #  HibernateDelaySec=5min
+  #'';
   powerManagement.enable = true;
   powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
 }

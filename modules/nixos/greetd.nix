@@ -7,10 +7,14 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --remember --asterisks --container-padding 2 --cmd niri-session";
+        command = "${pkgs.tuigreet}/bin/tuigreet --remember --time --asterisks --container-padding 2 --no-xsession-wrapper --cmd 'nu'";
+        user = "greeter";
       };
     };
   };
+
+  environment.sessionVariables.XDG_DATA_DIRS = 
+    [ "/run/current-system/sw/share" ];
 
   # this is a life saver.
   # literally no documentation about this anywhere.
