@@ -7,7 +7,8 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --remember --time --asterisks --container-padding 2 --no-xsession-wrapper --cmd 'nu'";
+        # command = "${pkgs.tuigreet}/bin/tuigreet --remember --time --asterisks --container-padding 2 --no-xsession-wrapper --cmd 'start-hyprland'";
+        command = "${pkgs.tuigreet}/bin/tuigreet --remember --time --asterisks --container-padding 2 --no-xsession-wrapper --cmd 'niri-session'";
         user = "greeter";
       };
     };
