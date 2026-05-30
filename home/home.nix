@@ -14,7 +14,7 @@ in
   ];
   home.username = "scott";
   home.homeDirectory = "/home/scott";
-  home.stateVersion = "25.11";
+  home.stateVersion = "26.05";
 
   programs.git.enable = true;
   programs.bash = {
@@ -52,4 +52,8 @@ in
     x11.enable = true;
     gtk.enable = true;
   };
+
+  home.packages = with pkgs; [
+    nautilus
+  ];
 }

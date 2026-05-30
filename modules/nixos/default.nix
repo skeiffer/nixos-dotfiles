@@ -32,7 +32,6 @@
 
   programs.seahorse.enable = true;
   programs.firefox.enable = true;
-  programs.thunar.enable = true;
   programs.hyprland.enable = true;  
 
   programs.nh = {
@@ -73,5 +72,6 @@
 
   security.polkit.enable = true;
   services.xserver.enable = true;
-  system.stateVersion = "25.11";
+  services.gvfs.enable = true;
+  system.stateVersion = "26.05";
 }
