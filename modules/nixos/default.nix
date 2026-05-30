@@ -59,6 +59,7 @@
     matugen
     signal-desktop
     dig
+    jq
   ];
   
   # Set your time zone.
