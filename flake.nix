@@ -3,8 +3,7 @@
 
   inputs = {
     # Official NixOS package source, using nixos's unstable branch by default
-    #nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";

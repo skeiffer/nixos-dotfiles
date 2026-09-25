@@ -59,6 +59,7 @@
     signal-desktop
     dig
     jq
+    vlc
   ];
   
   # Set your time zone.
