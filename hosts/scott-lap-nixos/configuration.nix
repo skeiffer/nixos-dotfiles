@@ -11,6 +11,7 @@
     ../../modules/nixos/laptop.nix
   ];
   hardware.asahi.peripheralFirmwareDirectory = ./firmware;
+  hardware.asahi.enable = true;
   #hardware.graphics.package = inputs.nixpkgs-mesa.legacyPackages.aarch64-linux.mesa;
   hardware.bluetooth.enable = true;
   services.power-profiles-daemon.enable = true;
