@@ -13,6 +13,6 @@
       ];
     }
     { command = [ "xwayland-satellite" ]; }
-    { command = [ "noctalia-shell" ]; }
+    { command = [ "noctalia" ]; }
   ];
 }

@@ -25,18 +25,16 @@ in
 
       # Quickshell Keybinds Start
       "super+Control+Return".action = spawn [
-        "noctalia-shell"
-        "ipc"
-        "call"
+        "noctalia"
+        "msg"
+        "panel-toggle"
         "launcher"
-        "toggle"
       ];
       "super+Space".action = spawn [
-        "noctalia-shell"
-        "ipc"
-        "call"
+        "noctalia"
+        "msg"
+        "panel-toggle"
         "launcher"
-        "toggle"
       ];
       # Quickshell Keybinds End
 
@@ -73,10 +71,9 @@ in
 
       "super+t".action = toggle-window-floating;
       "super+l".action = spawn [
-        "noctalia-shell"
-        "ipc"
-        "call"
-        "lockScreen"
+        "noctalia"
+        "msg"
+        "session"
         "lock"
       ];
 

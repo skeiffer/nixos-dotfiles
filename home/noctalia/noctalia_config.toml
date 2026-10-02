@@ -7,3 +7,9 @@ wallpaper_scheme  = "m3-content"
 enabled               = true
 transition_on_startup = true
 directory             = "~/Pictures/Wallpapers"
+
+[wallpaper.automation]
+enabled                      = true
+interval_seconds             = 1800 # 30min
+order                        = "random" # random | alphabetical
+recursive                    = true     # scan subdirectories when selecting random wallpapers
