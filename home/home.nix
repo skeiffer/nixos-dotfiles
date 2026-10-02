@@ -10,7 +10,7 @@ in
     ./programs
     ./niri
     ./hypridle
-    ./noctalia.nix
+    ./noctalia
   ];
   home.username = "scott";
   home.homeDirectory = "/home/scott";

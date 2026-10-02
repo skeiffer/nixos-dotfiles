@@ -1,0 +1,9 @@
+[theme]
+mode              = "dark"
+source            = "wallpaper"
+wallpaper_scheme  = "m3-content"
+
+[wallpaper]
+enabled               = true
+transition_on_startup = true
+directory             = "~/Pictures/Wallpapers"
