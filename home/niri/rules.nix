@@ -5,49 +5,23 @@
       {
         matches = [
           {
-            namespace = "^noctalia-overview$";
+            namespace = "^noctalia-backdrop";
           }
         ];
         place-within-backdrop = true;
       }
     ];
     window-rules = [
-      # # Browsers
-      # {
-      #   matches = [
-      #     { app-id = "firefox"; }
-      #   ];
-      #   open-on-workspace = "browser";
-      # }
-      # {
-      #   matches = [
-      #     { app-id = "zen"; }
-      #   ];
-      #   open-on-workspace = "browser";
-      # }
-
-      # # Discord
-      # {
-      #   matches = [
-      #     { app-id = "vesktop"; }
-      #   ];
-      #   open-on-workspace = "discord";
-      # }
-
-      # # Music
-      # {
-      #   matches = [
-      #     { title = "spotify_player"; }
-      #   ];
-      #   open-on-workspace = "music";
-      # }
-      # {
-      #   matches = [
-      #     { title = "Cider"; }
-      #   ];
-      #   open-on-workspace = "music";
-      # }
-
+      {
+        matches = [
+          {
+            app-id = "dev.noctalia.Noctalia";
+          }
+        ];
+        open-floating = true;
+        default-column-width = { fixed = 1080; };
+        default-window-height = { fixed = 880; };
+      }
       {
         geometry-corner-radius = {
           top-left = 20.0;
